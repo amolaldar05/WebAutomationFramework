@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-03-23T05:24:14 GMT-07:00" name="Default suite" finished-at="2024-03-23T05:24:25 GMT-07:00" duration-ms="10971">
+    <groups>
+    </groups>
+    <test started-at="2024-03-23T05:24:14 GMT-07:00" name="Default test" finished-at="2024-03-23T05:24:25 GMT-07:00" duration-ms="10971">
+      <class name="Selenium.WebAutomation.DataMatching">
+        <test-method is-config="true" signature="lauchApp()[pri:0, instance:Selenium.WebAutomation.DataMatching@72e5a8e]" started-at="2024-03-23T05:24:14 GMT-07:00" name="lauchApp" finished-at="2024-03-23T05:24:19 GMT-07:00" duration-ms="5138" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- lauchApp -->
+        <test-method signature="dataMatch()[pri:0, instance:Selenium.WebAutomation.DataMatching@72e5a8e]" started-at="2024-03-23T05:24:19 GMT-07:00" name="dataMatch" finished-at="2024-03-23T05:24:25 GMT-07:00" duration-ms="5790" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dataMatch -->
+      </class> <!-- Selenium.WebAutomation.DataMatching -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
