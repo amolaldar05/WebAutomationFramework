@@ -1,6 +1,7 @@
 package SignUp;
 
 import org.testng.annotations.Test;
+import org.testng.annotations.Test;
 
 import PageObjectModel.AmazonRegistration;
 import TestComponents.BaseClass;
