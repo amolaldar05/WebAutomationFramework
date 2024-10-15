@@ -1,9 +1,11 @@
 package SignUp;
 
 import org.testng.annotations.Test;
+
+import AmazonPom.AmazonRegistration;
+
 import org.testng.annotations.Test;
 
-import PageObjectModel.AmazonRegistration;
 import TestComponents.BaseClass;
 
 public class NewUser extends BaseClass {

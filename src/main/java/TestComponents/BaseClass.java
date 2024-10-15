@@ -35,7 +35,7 @@ public class BaseClass {
 		prop.load(fis);
 
 		String browserName = prop.getProperty("browserName");
-		url = prop.getProperty("url");
+		url = prop.getProperty("emiratesUrl");
 
 		switch (browserName.toLowerCase()) {
 		case "chrome":

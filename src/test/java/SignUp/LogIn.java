@@ -1,9 +1,11 @@
 package SignUp;
 
 import org.testng.annotations.Test;
+
+import AmazonPom.LogInPom;
+
 import org.testng.annotations.Test;
 
-import PageObjectModel.LogInPom;
 import TestComponents.BaseClass;
 import Utilities.DataProviderClass;
 

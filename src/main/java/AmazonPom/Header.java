@@ -1,4 +1,4 @@
-package PageObjectModel;
+package AmazonPom;
 
 import java.time.Duration;
 
