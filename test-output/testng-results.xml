@@ -2,36 +2,34 @@
 <testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-08-11T08:55:00 GST" name="Default suite" finished-at="2024-08-11T08:55:06 GST" duration-ms="6216">
+  <suite started-at="2024-10-20T18:50:43 GST" name="Default suite" finished-at="2024-10-20T18:50:54 GST" duration-ms="11618">
     <groups>
     </groups>
-    <test started-at="2024-08-11T08:55:00 GST" name="Default test" finished-at="2024-08-11T08:55:06 GST" duration-ms="6216">
-      <class name="EmiratesSignUpTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:EmiratesSignUpTest@3646a422]" started-at="2024-08-11T08:55:00 GST" name="setUp" finished-at="2024-08-11T08:55:05 GST" duration-ms="5729" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="signUp()[pri:0, instance:EmiratesSignUpTest@3646a422]" started-at="2024-08-11T08:55:05 GST" name="signUp" finished-at="2024-08-11T08:55:06 GST" duration-ms="335" status="FAIL">
-          <exception class="org.openqa.selenium.NoAlertPresentException">
+    <test started-at="2024-10-20T18:50:43 GST" name="Default test" finished-at="2024-10-20T18:50:54 GST" duration-ms="11618">
+      <class name="TestClasses.HandlingAccordian">
+        <test-method signature="test()[pri:0, instance:TestClasses.HandlingAccordian@6c1a5b54]" started-at="2024-10-20T18:50:43 GST" name="test" finished-at="2024-10-20T18:50:54 GST" duration-ms="11589" status="FAIL">
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
             <message>
-              <![CDATA[no such alert
-  (Session info: chrome=127.0.6533.100)
+              <![CDATA[element click intercepted: Element <div class="font-secondary text-s">...</div> is not clickable at point (229, 71). Other element would receive the click: <div class="container flex justify-between py-l h-[60px]">...</div>
+  (Session info: chrome=129.0.6668.103)
 Build info: version: '4.19.1', revision: 'abe0ee07dc'
-System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '14.5', java.version: '17.0.10'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '14.6.1', java.version: '17.0.10'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [a15f36b092a1c843d88e98497302a854, getAlertText {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.100, chrome: {chromedriverVersion: 127.0.6533.99 (f31af5097d90..., userDataDir: /var/folders/rq/m7nhxxts6qz...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50078}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:50078/devtoo..., se:cdpVersion: 127.0.6533.100, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: a15f36b092a1c843d88e98497302a854]]>
+Command: [6dbdebe6439b9cc1f960d6bba01f7983, clickElement {id=f.1CCDB2C0CF09EEF5DF708BC21E04A77B.d.2BDB728FD839AFDCCD210F4F0FEB77D8.e.66}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.103, chrome: {chromedriverVersion: 129.0.6668.100 (cf58cba358d..., userDataDir: /var/folders/rq/m7nhxxts6qz...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52647}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:52647/devtoo..., se:cdpVersion: 129.0.6668.103, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on mac (6dbdebe6439b9cc1f960d6bba01f7983)] -> css selector: div.grid.group.units-grid > div.font-secondary.text-s:nth-child(1)]
+Session ID: 6dbdebe6439b9cc1f960d6bba01f7983]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoAlertPresentException: no such alert
-  (Session info: chrome=127.0.6533.100)
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <div class="font-secondary text-s">...</div> is not clickable at point (229, 71). Other element would receive the click: <div class="container flex justify-between py-l h-[60px]">...</div>
+  (Session info: chrome=129.0.6668.103)
 Build info: version: '4.19.1', revision: 'abe0ee07dc'
-System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '14.5', java.version: '17.0.10'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '14.6.1', java.version: '17.0.10'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [a15f36b092a1c843d88e98497302a854, getAlertText {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.100, chrome: {chromedriverVersion: 127.0.6533.99 (f31af5097d90..., userDataDir: /var/folders/rq/m7nhxxts6qz...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50078}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:50078/devtoo..., se:cdpVersion: 127.0.6533.100, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: a15f36b092a1c843d88e98497302a854
+Command: [6dbdebe6439b9cc1f960d6bba01f7983, clickElement {id=f.1CCDB2C0CF09EEF5DF708BC21E04A77B.d.2BDB728FD839AFDCCD210F4F0FEB77D8.e.66}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.103, chrome: {chromedriverVersion: 129.0.6668.100 (cf58cba358d..., userDataDir: /var/folders/rq/m7nhxxts6qz...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52647}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:52647/devtoo..., se:cdpVersion: 129.0.6668.103, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on mac (6dbdebe6439b9cc1f960d6bba01f7983)] -> css selector: div.grid.group.units-grid > div.font-secondary.text-s:nth-child(1)]
+Session ID: 6dbdebe6439b9cc1f960d6bba01f7983
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -44,10 +42,9 @@ at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.ja
 at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
 at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:591)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:595)
-at org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator.alert(RemoteWebDriver.java:1163)
-at EmiratesSignUpTest.signUp(EmiratesSignUpTest.java:17)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+at TestClasses.HandlingAccordian.test(HandlingAccordian.java:44)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -78,15 +75,11 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoAlertPresentException -->
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- signUp -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:EmiratesSignUpTest@3646a422]" started-at="2024-08-11T08:55:06 GST" name="tearDown" finished-at="2024-08-11T08:55:06 GST" duration-ms="118" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- EmiratesSignUpTest -->
+        </test-method> <!-- test -->
+      </class> <!-- TestClasses.HandlingAccordian -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

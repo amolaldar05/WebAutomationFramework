@@ -4,7 +4,7 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>WebAutomationPrac</groupId>
-	<artifactId>Selenium</artifactId>
+	<artifactId>SeleniumWeb_Automation_Framework</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
@@ -130,5 +130,10 @@
 		</dependency>
 
 
+		<dependency>
+			<groupId>amolaldar</groupId>
+			<artifactId>Appium</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
 	</dependencies>
 </project>
