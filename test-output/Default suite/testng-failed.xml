@@ -3,11 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="TestClasses.HandlingAccordian">
+      <class name="PaginationTest">
         <methods>
+          <include name="pagination"/>
+          <include name="tearDown"/>
           <include name="test"/>
+          <include name="presetup"/>
         </methods>
-      </class> <!-- TestClasses.HandlingAccordian -->
+      </class> <!-- PaginationTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
