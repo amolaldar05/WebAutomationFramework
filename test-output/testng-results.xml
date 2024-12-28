@@ -1,60 +1,108 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="0" failed="1" skipped="1">
+<testng-results ignored="0" total="4" passed="3" failed="0" skipped="1">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-10-26T22:17:12 GST" name="Default suite" finished-at="2024-10-26T22:17:24 GST" duration-ms="11627">
+  <suite started-at="2024-12-22T21:01:11 GST" name="Suite" finished-at="2024-12-22T21:01:36 GST" duration-ms="24991">
     <groups>
     </groups>
-    <test started-at="2024-10-26T22:17:12 GST" name="Default test" finished-at="2024-10-26T22:17:24 GST" duration-ms="11627">
-      <class name="PaginationTest">
-        <test-method is-config="true" signature="presetup()[pri:0, instance:PaginationTest@53fb3dab]" started-at="2024-10-26T22:17:12 GST" name="presetup" finished-at="2024-10-26T22:17:19 GST" duration-ms="6974" status="PASS">
+    <test started-at="2024-12-22T21:01:11 GST" name="ChromeTest" finished-at="2024-12-22T21:01:18 GST" duration-ms="7077">
+      <class name="Cross_Browser.ParallerTest">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:Cross_Browser.ParallerTest@13e344d]" started-at="2024-12-22T21:01:11 GST" name="setup" finished-at="2024-12-22T21:01:14 GST" duration-ms="3221" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- presetup -->
-        <test-method signature="pagination()[pri:0, instance:PaginationTest@53fb3dab]" started-at="2024-10-26T22:17:19 GST" name="pagination" finished-at="2024-10-26T22:17:24 GST" duration-ms="4331" status="FAIL">
-          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+        </test-method> <!-- setup -->
+        <test-method signature="openYouTube()[pri:0, instance:Cross_Browser.ParallerTest@13e344d]" started-at="2024-12-22T21:01:14 GST" name="openYouTube" finished-at="2024-12-22T21:01:17 GST" duration-ms="3653" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openYouTube -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Cross_Browser.ParallerTest@13e344d]" started-at="2024-12-22T21:01:17 GST" name="tearDown" finished-at="2024-12-22T21:01:18 GST" duration-ms="168" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- Cross_Browser.ParallerTest -->
+    </test> <!-- ChromeTest -->
+    <test started-at="2024-12-22T21:01:11 GST" name="EdgeTest" finished-at="2024-12-22T21:01:20 GST" duration-ms="9860">
+      <class name="Cross_Browser.ParallerTest">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:Cross_Browser.ParallerTest@1a75e76a]" started-at="2024-12-22T21:01:11 GST" name="setup" finished-at="2024-12-22T21:01:13 GST" duration-ms="2801" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="openYouTube()[pri:0, instance:Cross_Browser.ParallerTest@1a75e76a]" started-at="2024-12-22T21:01:13 GST" name="openYouTube" finished-at="2024-12-22T21:01:19 GST" duration-ms="5864" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openYouTube -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Cross_Browser.ParallerTest@1a75e76a]" started-at="2024-12-22T21:01:19 GST" name="tearDown" finished-at="2024-12-22T21:01:20 GST" duration-ms="1163" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- Cross_Browser.ParallerTest -->
+    </test> <!-- EdgeTest -->
+    <test started-at="2024-12-22T21:01:23 GST" name="SafariTest" finished-at="2024-12-22T21:01:33 GST" duration-ms="10734">
+      <class name="Cross_Browser.ParallerTest">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:Cross_Browser.ParallerTest@353352b6]" started-at="2024-12-22T21:01:23 GST" name="setup" finished-at="2024-12-22T21:01:33 GST" duration-ms="10723" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[safari]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
             <message>
-              <![CDATA[element click intercepted: Element <h3 class="flex items-center text-m font-medium">...</h3> is not clickable at point (1650, 379). Other element would receive the click: <a class="absolute left-0 top-0 h-full w-full" href="/en-ae/projects/damac-tower-nine-elms-london/for-sale/properties/5-apartment/">...</a>
-  (Session info: chrome=130.0.6723.70)
+              <![CDATA[Could not start a new session. Response code 500. Message: Could not create a session: You must enable 'Allow remote automation' in the Developer section of Safari Settings to control Safari via WebDriver. 
+Host info: host: 'Amols-MacBook-Pro.local', ip: 'fe80:0:0:0:81e:a109:e6ba:a8ee%en0'
 Build info: version: '4.19.1', revision: 'abe0ee07dc'
 System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '14.6.1', java.version: '17.0.10'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [f4afbdf65bef939f46f71a35cef30fd5, clickElement {id=f.E9428BC6E4A0D6C9675C68BF842BC9E9.d.51364E3832CE92AD595C0D643DD4435D.e.48}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 130.0.6723.70, chrome: {chromedriverVersion: 130.0.6723.69 (3ec172b971b9..., userDataDir: /var/folders/rq/m7nhxxts6qz...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57080}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:57080/devtoo..., se:cdpVersion: 130.0.6723.70, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[[[ChromeDriver: chrome on mac (f4afbdf65bef939f46f71a35cef30fd5)] -> xpath: //div[@data-component='autogeneratedCarousel']]] -> css selector: h3[class*='items-center']]
-Session ID: f4afbdf65bef939f46f71a35cef30fd5]]>
+Driver info: org.openqa.selenium.safari.SafariDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: safari}]}]
+Capabilities {browserName: safari}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <h3 class="flex items-center text-m font-medium">...</h3> is not clickable at point (1650, 379). Other element would receive the click: <a class="absolute left-0 top-0 h-full w-full" href="/en-ae/projects/damac-tower-nine-elms-london/for-sale/properties/5-apartment/">...</a>
-  (Session info: chrome=130.0.6723.70)
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: Could not create a session: You must enable 'Allow remote automation' in the Developer section of Safari Settings to control Safari via WebDriver. 
+Host info: host: 'Amols-MacBook-Pro.local', ip: 'fe80:0:0:0:81e:a109:e6ba:a8ee%en0'
 Build info: version: '4.19.1', revision: 'abe0ee07dc'
 System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '14.6.1', java.version: '17.0.10'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [f4afbdf65bef939f46f71a35cef30fd5, clickElement {id=f.E9428BC6E4A0D6C9675C68BF842BC9E9.d.51364E3832CE92AD595C0D643DD4435D.e.48}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 130.0.6723.70, chrome: {chromedriverVersion: 130.0.6723.69 (3ec172b971b9..., userDataDir: /var/folders/rq/m7nhxxts6qz...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57080}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:57080/devtoo..., se:cdpVersion: 130.0.6723.70, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[[[ChromeDriver: chrome on mac (f4afbdf65bef939f46f71a35cef30fd5)] -> xpath: //div[@data-component='autogeneratedCarousel']]] -> css selector: h3[class*='items-center']]
-Session ID: f4afbdf65bef939f46f71a35cef30fd5
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+Driver info: org.openqa.selenium.safari.SafariDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: safari}]}]
+Capabilities {browserName: safari}
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:61)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:162)
 at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
 at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
-at PaginationTest.pagination(PaginationTest.java:89)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:232)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:161)
+at org.openqa.selenium.safari.SafariDriver.<init>(SafariDriver.java:84)
+at org.openqa.selenium.safari.SafariDriver.<init>(SafariDriver.java:80)
+at org.openqa.selenium.safari.SafariDriver.<init>(SafariDriver.java:57)
+at org.openqa.selenium.safari.SafariDriver.<init>(SafariDriver.java:48)
+at Cross_Browser.ParallerTest.setup(ParallerTest.java:41)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 at java.base/java.lang.reflect.Method.invoke(Method.java:568)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:393)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:326)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:810)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:578)
 at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
 at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
 at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
@@ -65,63 +113,111 @@ at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 at org.testng.TestRunner.privateRun(TestRunner.java:819)
 at org.testng.TestRunner.run(TestRunner.java:619)
 at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
-at org.testng.TestNG.runSuites(TestNG.java:1134)
-at org.testng.TestNG.run(TestNG.java:1101)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:840)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- pagination -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:PaginationTest@53fb3dab]" started-at="2024-10-26T22:17:24 GST" name="tearDown" finished-at="2024-10-26T22:17:24 GST" duration-ms="279" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method signature="test()[pri:0, instance:PaginationTest@53fb3dab]" started-at="2024-10-26T22:17:24 GST" name="test" finished-at="2024-10-26T22:17:24 GST" depends-on-methods="PaginationTest.pagination" duration-ms="0" status="SKIP">
-          <exception class="java.lang.Throwable">
+        </test-method> <!-- setup -->
+        <test-method signature="openYouTube()[pri:0, instance:Cross_Browser.ParallerTest@353352b6]" started-at="2024-12-22T21:01:33 GST" name="openYouTube" finished-at="2024-12-22T21:01:33 GST" duration-ms="1" status="SKIP">
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
             <message>
-              <![CDATA[Method PaginationTest.test() on instance PaginationTest@53fb3dab depends on not successfully finished methods 
-[PaginationTest.pagination() on instance PaginationTest@53fb3dab]]]>
+              <![CDATA[Could not start a new session. Response code 500. Message: Could not create a session: You must enable 'Allow remote automation' in the Developer section of Safari Settings to control Safari via WebDriver. 
+Host info: host: 'Amols-MacBook-Pro.local', ip: 'fe80:0:0:0:81e:a109:e6ba:a8ee%en0'
+Build info: version: '4.19.1', revision: 'abe0ee07dc'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '14.6.1', java.version: '17.0.10'
+Driver info: org.openqa.selenium.safari.SafariDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: safari}]}]
+Capabilities {browserName: safari}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method PaginationTest.test() on instance PaginationTest@53fb3dab depends on not successfully finished methods 
-[PaginationTest.pagination() on instance PaginationTest@53fb3dab]
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:157)
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: Could not create a session: You must enable 'Allow remote automation' in the Developer section of Safari Settings to control Safari via WebDriver. 
+Host info: host: 'Amols-MacBook-Pro.local', ip: 'fe80:0:0:0:81e:a109:e6ba:a8ee%en0'
+Build info: version: '4.19.1', revision: 'abe0ee07dc'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '14.6.1', java.version: '17.0.10'
+Driver info: org.openqa.selenium.safari.SafariDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: safari}]}]
+Capabilities {browserName: safari}
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:61)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:162)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:232)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:161)
+at org.openqa.selenium.safari.SafariDriver.<init>(SafariDriver.java:84)
+at org.openqa.selenium.safari.SafariDriver.<init>(SafariDriver.java:80)
+at org.openqa.selenium.safari.SafariDriver.<init>(SafariDriver.java:57)
+at org.openqa.selenium.safari.SafariDriver.<init>(SafariDriver.java:48)
+at Cross_Browser.ParallerTest.setup(ParallerTest.java:41)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:393)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:326)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:810)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:578)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
 at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
 at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
 at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 at org.testng.TestRunner.privateRun(TestRunner.java:819)
 at org.testng.TestRunner.run(TestRunner.java:619)
 at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
-at org.testng.TestNG.runSuites(TestNG.java:1134)
-at org.testng.TestNG.run(TestNG.java:1101)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:840)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.Throwable -->
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test -->
-      </class> <!-- PaginationTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- openYouTube -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Cross_Browser.ParallerTest@353352b6]" started-at="2024-12-22T21:01:33 GST" name="tearDown" finished-at="2024-12-22T21:01:33 GST" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- Cross_Browser.ParallerTest -->
+    </test> <!-- SafariTest -->
+    <test started-at="2024-12-22T21:01:11 GST" name="FirefoxTest" finished-at="2024-12-22T21:01:36 GST" duration-ms="24991">
+      <class name="Cross_Browser.ParallerTest">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:Cross_Browser.ParallerTest@273444fe]" started-at="2024-12-22T21:01:11 GST" name="setup" finished-at="2024-12-22T21:01:16 GST" duration-ms="5123" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="openYouTube()[pri:0, instance:Cross_Browser.ParallerTest@273444fe]" started-at="2024-12-22T21:01:16 GST" name="openYouTube" finished-at="2024-12-22T21:01:35 GST" duration-ms="19106" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openYouTube -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Cross_Browser.ParallerTest@273444fe]" started-at="2024-12-22T21:01:35 GST" name="tearDown" finished-at="2024-12-22T21:01:36 GST" duration-ms="733" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- Cross_Browser.ParallerTest -->
+    </test> <!-- FirefoxTest -->
+  </suite> <!-- Suite -->
 </testng-results>
